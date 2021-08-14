@@ -6,7 +6,7 @@ import requests
 
 # NOTE: you must manually set API_KEY below using information retrieved from your IBM Cloud account.
 API_KEY = "iq5N_BJXx6-XR4VASNu2EzDWo8-tJm32LG6FhnQbyQDY"
-token_response = requests.post('https://us-south.ml.cloud.ibm.com/ml/v4/deployments/7642de31-7467-472c-98cb-e2fbc400b24b/predictions?version=2021-08-14'})
+token_response = requests.post('https://us-south.ml.cloud.ibm.com/ml/v4/deployments/7642de31-7467-472c-98cb-e2fbc400b24b/predictions?version=2021-08-14')
 mltoken = token_response.json()["access_token"]
 
 
