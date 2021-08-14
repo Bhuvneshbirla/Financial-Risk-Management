@@ -86,7 +86,7 @@ def admin():
 
 
 
-    response_scoring = requests.post('https://eu-gb.ml.cloud.ibm.com/ml/v4/deployments/e4f7a068-f004-4584-b30d-a145c8049bf0/predictions?version=2021-08-02', json=payload_scoring, headers={'Authorization': 'Bearer ' + mltoken})
+    response_scoring = requests.post('https://us-south.ml.cloud.ibm.com/ml/v4/deployments/7642de31-7467-472c-98cb-e2fbc400b24b/predictions?version=2021-08-14', json=payload_scoring, headers={'Authorization': 'Bearer ' + mltoken})
     print("Scoring response")
     predictions=(response_scoring.json())
     pred=print(predictions)
